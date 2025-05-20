@@ -10,7 +10,17 @@ namespace Solid_Principle
     {
         static void Main(string[] args)
         {
-            
+            SmsAlert SA = new SmsAlert();
+            BloodOxygen BO = new BloodOxygen();
+            FileLogger FL = new FileLogger();
+            EmailAlert EA = new EmailAlert();
+            EmergencyHandler EH = new EmergencyHandler(FL, EA, SA);
+
+
+            int level = BO.GetOxygenLevel();
+            EH.IsDangerous(level);
+
         }
     }
 }
+

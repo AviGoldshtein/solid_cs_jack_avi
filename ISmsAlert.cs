@@ -8,5 +8,6 @@ namespace Solid_Principle
 {
     internal interface ISmsAlert
     {
+        void sendSmsAlert(string email, string alert);
     }
 }
