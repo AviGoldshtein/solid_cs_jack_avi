@@ -10,6 +10,7 @@ namespace Solid_Principle
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
